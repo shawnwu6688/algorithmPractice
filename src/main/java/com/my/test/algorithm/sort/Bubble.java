@@ -3,7 +3,7 @@ import com.my.test.tools.Tools;
 
 
 /**
- * @author:shawn.wu6688@gmail.com
+ * @author:shawn.wu
  * @date 2020/8/28 18:09
  */
 public class Bubble {
@@ -12,11 +12,11 @@ public class Bubble {
      *
      */
     public static void bubble(int[] arr) {
-
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - i -1; j++) {
-                if (arr[j] > arr[j + 1])
+                if (arr[j] > arr[j + 1]){
                     Tools.swap(arr,j+1,j );
+                }
             }
         }
         for (int i = 0; i < arr.length; i++) {
@@ -38,14 +38,14 @@ public class Bubble {
             int minPos = i;
             int maxPos = arr.length - 1;
             for (int j = i; j < arr.length - i -1; j++) {
-                if (arr[j] > arr[j + 1])
+                if (arr[j] > arr[j + 1]){
                     Tools.swap(arr,j+1,j );
-
+                }
             }
             for (int j = i; j < arr.length - i -1; j++) {
-                if (arr[j] < arr[j + 1])
+                if (arr[j] < arr[j + 1]){
                     Tools.swap(arr,j+1,j );
-
+                }
             }
 
         }
@@ -86,9 +86,11 @@ public class Bubble {
         for (i = 0; i < arr.length; i++) {
 
             for (int j = 0; j < k; j++) {
-                if (arr[j] > arr[j + 1])
+                if (arr[j] > arr[j + 1]){
                     Tools.swap(arr,j+1,j );
                     flag = 1;
+                }
+
                 //运行到这里，发生了交换，则还要继续发生循环
                 lastExchange = j;
                 //以最后一次发生交换的位置为坐标，收紧需要交换的位置
