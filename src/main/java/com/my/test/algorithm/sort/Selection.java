@@ -1,7 +1,4 @@
 package com.my.test.algorithm.sort;
-
-import org.junit.Test;
-
 public class Selection {
     /**
     author:wuxiao
@@ -13,6 +10,7 @@ public class Selection {
 
     public static void selectSort(int[] arr){
         /**
+         * core: 标记出最大/小值，比较，互换，放在队尾
          * 时间复杂度上的两处优化
          * 1、在比较最小值放在数组前端的基础上，同时比较最大值，放在数组末端
          * 2、在一次比较一个的基础上比较两个
@@ -35,20 +33,6 @@ public class Selection {
             System.out.println("经过第"+i+"次遍历后的数组：");
             print(arr);
         }
-        //for(int i = 0; i<(arr.length); i++){
-        //    int minPos = i;
-        //    int maxPos = arr.length-i-1;
-        //    for (int j = i+1; j<arr.length-i-1; j+=2){
-        //        minPos = arr[minPos]>(arr[j]>arr[j+1]?arr[j+1]:arr[j])?j:minPos;
-        //
-        //    }
-        //    System.out.println("minPos:"+minPos);
-        //
-        //    swap(arr,minPos,i);
-        //
-        //    System.out.println("经过第"+i+"次遍历后的数组：");
-        //    print(arr);
-        //}
     }
     public static void print(int[] arr){
         /**

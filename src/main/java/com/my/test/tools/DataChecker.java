@@ -1,15 +1,13 @@
 package com.my.test.tools;
 
-import com.my.test.algorithm.sort.Insert;
-import com.my.test.algorithm.sort.Selection;
+
 import com.my.test.algorithm.sort.Shell;
 import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.Random;
 
 /**
- * @author:shawn.wu6688@gmail.com
+ * @author:shawn.wu
  * @date 2020/8/28 17:08
  */
 public class DataChecker {

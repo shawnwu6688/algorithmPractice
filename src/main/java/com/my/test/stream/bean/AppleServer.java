@@ -19,21 +19,17 @@ public class AppleServer {
     }
     public void groupByColor(Predicate<? super Apple> pr){
 
-
         List<Apple> yellow = appleStore
                 .stream()
                 .filter(pr)
                 //.filter(a->a.getWeight()>500)
                 .collect(Collectors.toList());
-
         System.out.println(yellow);
-
     }
-
     public static void main(String[] args) {
         new AppleServer().groupByColor(a->a.getWeight()>500&&a.getColor().equals("yellow"));
     }
-    //求出每个颜色的平均重量
+    /**求出每个颜色的平均重量*/
     @Test
     public void groupByColorandWeight(){
 
@@ -78,7 +74,8 @@ public class AppleServer {
                 .stream()
                 .filter(a -> a.getColor().equals("yellow"))
                 .map(a->a.getColor())
-                .peek(a-> System.out.println(a))//同foreach一样都是执行一个函数，但是peek是中间节点，foreach是中止节点
+                .peek(a-> System.out.println(a))
+                //同foreach一样都是执行一个函数，但是peek是中间节点，foreach是中止节点
                 .collect(Collectors.toList());
 
 

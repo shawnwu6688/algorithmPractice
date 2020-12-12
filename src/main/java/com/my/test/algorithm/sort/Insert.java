@@ -4,11 +4,12 @@ import com.my.test.tools.Tools;
 
 
 /**
- * @author:shawn.wu6688@gmail.com
+ * @author:shawn.wu
  * @date 2020/9/1 15:25
  */
 public class Insert {
     /**
+     * core: 把未参与排序的数已排好序的数进行比较，互换
      * 插入排序就相当于是先把前边的排序排好了，然后后边的数与前边拍好的数依次比较，互换位置
      * @param arr
      */

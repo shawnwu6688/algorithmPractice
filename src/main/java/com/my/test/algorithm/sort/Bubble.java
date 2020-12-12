@@ -47,10 +47,8 @@ public class Bubble {
                     Tools.swap(arr,j+1,j );
                 }
             }
-
         }
         Tools.print(arr);
-
     }
 
     public static void optimizatedBubble1(int[] arr) {
@@ -90,7 +88,6 @@ public class Bubble {
                     Tools.swap(arr,j+1,j );
                     flag = 1;
                 }
-
                 //运行到这里，发生了交换，则还要继续发生循环
                 lastExchange = j;
                 //以最后一次发生交换的位置为坐标，收紧需要交换的位置

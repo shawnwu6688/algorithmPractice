@@ -3,7 +3,7 @@ package com.my.test.algorithm.sort;
 import com.my.test.tools.Tools;
 
 /**
- * @author:shawn.wu6688@gmail.com
+ * @author:shawn
  * @date 2020/9/1 16:33
  */
 public class Shell {
